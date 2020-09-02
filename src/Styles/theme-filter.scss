@@ -1,0 +1,45 @@
+$background: rgba($black, 0.04);
+$padding-gutter-mobile: $padding-gutter*0.5;
+
+@mixin transition-speed {
+  transition: $transition-time;
+}
+
+@mixin for-phone-down {
+  @media (max-width: $phone-screen) { @content; }
+}
+@mixin for-tablet-down {
+  @media (max-width: $tablet-screen) { @content; }
+}
+@mixin for-laptop-down {
+  @media (max-width: $laptop-screen) { @content; }
+}
+@mixin for-desktop-down {
+  @media (max-width: $desktop-max-screen) { @content; }
+}
+
+/*
+---------------Usage---------------
+.example-box {
+  padding: 10px;
+
+  @include for-laptop-down {
+    padding: 20px;
+  }
+}
+*/
+
+@mixin font-style-m {
+  font-size: $font-m;
+  line-height: 1;
+}
+
+@mixin font-style-l {
+  font-size: $font-l;
+  line-height: 1;
+}
+
+@mixin font-style-xl {
+  font-size: $font-xl;
+  line-height: 1;
+}

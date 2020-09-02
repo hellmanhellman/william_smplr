@@ -1,5 +1,5 @@
 import React, { FormEvent } from 'react'
-import "./Button.scss"
+import button from "./button.module.scss"
 
 interface ButtonProps{
     primary?: boolean;
@@ -10,14 +10,14 @@ interface ButtonProps{
 
 export const Button: React.FC<ButtonProps> = (props: any) => {
 
-    const {text, onclick} = props
+    const {text, onclick,styleName} = props
     const classnames = Object.keys(props)
                            .filter((k) => props[k] === true)
                            .join(' ');
                            
     return (
         <>
-            <button onClick={onclick} className={classnames}>{text}</button>
+            <button className={button.test} onClick={onclick}>{text}</button>
         </>
     )
 }

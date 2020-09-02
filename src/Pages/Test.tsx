@@ -24,11 +24,13 @@ export const Test = () => {
             From /Pages/Test
             <br/>
             <br/>
-            <Button primary text="click me" onclick={handleClick}/>
+            <Button  text="click me" onclick={handleClick}/>
             <br/>
             <br/>
             <Input placeholder="Enter your password" type="password" value={InputValue} handleChange={handleChangePW} />
 
+            <h1 className="test">hello</h1>
+            
             <p>your password is:  {InputValue}</p>
             <br/>
             <br/>
@@ -44,7 +46,7 @@ export const Test = () => {
                     <br/>
                     <br/>
 
-                    <Button text="Submit your name" onclick={() => alert(`welcome ${FormInputValue} your name is saved!`)}/>
+                    <Button primary text="Submit your name" onclick={() => alert(`welcome ${FormInputValue} your name is saved!`)}/>
                 </form>
             </div>
         </>
