@@ -1,26 +1,34 @@
-import React, { ChangeEvent } from 'react'
-import "./Input.scss"
+import React, { ChangeEvent } from "react";
+import input from "./input.module.scss";
 
-interface InputProps{
-    primary?: boolean;
-    type: string;
-    placeholder: any;
-    value: string;
-    class?: any;
-    handleChange: (e: ChangeEvent<HTMLInputElement>) => void;
+interface InputProps {
+  //styles
+  primary?: boolean;
+  test?: boolean;
+
+  type: string;
+  placeholder: any;
+  value: string;
+  class?: any;
+  handleChange: (e: ChangeEvent<HTMLInputElement>) => void;
 }
 
 export const Input: React.FC<InputProps> = (props: any) => {
+  const { type, placeholder, value, handleChange } = props;
 
-    const {type, placeholder, value, handleChange} = props
+  const classnames = Object.keys(props)
+    .filter((k) => props[k] === true)
+    .join(" ");
 
-    const classnames = Object.keys(props)
-                           .filter((k) => props[k] === true)
-                           .join(' ');
-
-    return (
-        <>
-            <input className={classnames} placeholder={placeholder} type={type} value={value} onChange={handleChange}/>
-        </>
-    )
-}
+  return (
+    <>
+      <input
+        className={input.test}
+        placeholder={placeholder}
+        type={type}
+        value={value}
+        onChange={handleChange}
+      />
+    </>
+  );
+};

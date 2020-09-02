@@ -1,13 +1,19 @@
+@import "../../../Styles/main";
+
 button {
-    background-color: yellow;
-    color: $green;
-    border: none;
-    padding: 1rem; 
+  background-color: yellow;
+  color: $green;
+  border: none;
+  padding: 1rem;
 }
 
 .primary {
-    background-color: yellow;
-    color: $blue;
-    border: none;
-    padding: 1rem; 
+  background-color: yellow;
+  color: $blue;
+  border: none;
+  padding: 1rem;
+}
+
+.test {
+  font-size: $font-l;
 }
