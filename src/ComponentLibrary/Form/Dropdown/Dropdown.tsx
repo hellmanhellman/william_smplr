@@ -18,7 +18,11 @@ export const Dropdown: React.FC<DropdownProps> = (props: any) => {
     <>
       <select className={dropdown.primary} name={name} id={id}>
         {options.map((item: string) => {
-          return <option key={item} value={item}>{item}</option>;
+          return (
+            <option key={item} value={item}>
+              {item}
+            </option>
+          );
         })}
       </select>
     </>
