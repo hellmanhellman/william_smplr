@@ -1,4 +1,5 @@
 import React, { FormEvent } from "react";
+import button from "./button.module.scss";
 
 interface ButtonProps {
   //styles
@@ -23,7 +24,7 @@ export const Button: React.FC<ButtonProps> = (props: any) => {
 
   return (
     <>
-      {/*Hårdkodad className nu, inte dynamisk än  - className={classnames}*/}
+      {/*Hï¿½rdkodad className nu, inte dynamisk ï¿½n  - className={classnames}*/}
       <button className={classnames} onClick={onclick}>
         {text}
       </button>

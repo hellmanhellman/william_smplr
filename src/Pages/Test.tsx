@@ -1,9 +1,9 @@
 import React, { useState, ChangeEvent, FormEvent } from "react";
-import { Button } from "../ComponentLibrary/Form/Button/Button";
-import { Input } from "../ComponentLibrary/Form/Input/Input";
-import { Dropdown } from "../ComponentLibrary/Form/Dropdown/Dropdown";
+import Button from "../ComponentLibrary/form/button";
+import Input from "../ComponentLibrary/form/input";
+import Dropdown from "../ComponentLibrary/form/dropdown";
 
-import "./william.scss";
+// import "./william.scss";
 
 const initialStateDropDownValues = ["volvo", "vw", "bmw"]
 

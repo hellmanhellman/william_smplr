@@ -1,12 +1,12 @@
 import React from 'react';
-// import { Test } from './Pages/Test';
+import { Test } from './pages/Test';
 import './styles/_main.scss';
 
 const App = () => (
-    <main className="layout">
-      <p>yass</p>
+  <main className="layout">
+    <Test />
   </main>
-  );
+);
 
 // function App() {
 //   return (
