@@ -1,6 +1,6 @@
 import React, { FormEvent } from "react";
-import button from "./button.module.scss";
-
+import styles from "./button.module.scss";
+import classNames from "classnames";
 interface ButtonProps {
   //styles
   primary?: any;
@@ -17,16 +17,14 @@ interface ButtonProps {
 export const Button: React.FC<ButtonProps> = (props: any) => {
   const { text, onclick } = props;
 
-    const classnames = Object.keys(props)
-      .filter((k) => props[k] === true)
-      .join(" ");
+    const classnames = classNames(styles,Object.keys(props)
+      .filter((k) => props[k] === true));
 
 
   return (
     <>
-      {/*H�rdkodad className nu, inte dynamisk �n  - className={classnames}*/}
       <button className={classnames} onClick={onclick}>
-        {text}
+        {text} ya
       </button>
     </>
   );

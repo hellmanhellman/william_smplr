@@ -1,5 +1,5 @@
 import React, { ChangeEvent } from "react";
-import input from "./input.module.scss";
+import styles from "./input.module.scss";
 
 interface InputProps {
   //styles
@@ -23,7 +23,7 @@ export const Input: React.FC<InputProps> = (props: any) => {
   return (
     <>
       <input
-        className={input.test}
+        className={styles.test}
         placeholder={placeholder}
         type={type}
         value={value}
