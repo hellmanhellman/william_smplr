@@ -1,7 +1,7 @@
 import React, { useState, ChangeEvent, FormEvent } from "react";
-import Button from "../ComponentLibrary/form/button";
-import Input from "../ComponentLibrary/form/input";
-import Dropdown from "../ComponentLibrary/form/dropdown";
+import Button from "../components/form/button";
+import Input from "../components/form/input";
+import Dropdown from "../components/form/dropdown";
 
 // import "./william.scss";
 
