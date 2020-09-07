@@ -1,6 +1,6 @@
 import React from 'react';
 // import './styles/main.scss';
-import { Test } from './pages/Test';
+import { Test } from './Pages/Test';
 
 const App = () => (
   <main className="layout">

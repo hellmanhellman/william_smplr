@@ -1,36 +1,41 @@
 import React, { useState, ChangeEvent, FormEvent } from "react";
-import Button from "../components/form/button";
-import Input from "../components/form/input";
-import Dropdown from "../components/form/dropdown";
+import Buttons from "../components/form/buttons/buttons";
 
-// import "./william.scss";
+// import { Button } from "./buttons.interface";
 
-const initialStateDropDownValues = ["volvo", "vw", "bmw"]
+import { Button } from "../components/form/buttons/buttons.interface";
+
+// import Button from "../components/form/buttonOld";
+// import Input from "../components/form/inputOld";
+// import Dropdown from "../components/form/dropdownOld";
+
+// const initialStateDropDownValues = ["volvo", "vw", "bmw"]
 
 export const Test = () => {
-  const [InputValue, setInputValue] = useState<string>("");
-  const [FormInputValue, setFormInputValue] = useState<string>("");
-  const [DropDownValue, setDropDownValue] = useState<string[]>(initialStateDropDownValues);
+  // const [InputValue, setInputValue] = useState<string>("");
+  // const [FormInputValue, setFormInputValue] = useState<string>("");
+  // const [DropDownValue, setDropDownValue] = useState<string[]>(initialStateDropDownValues);
 
-  const handleClick = (e: FormEvent<HTMLButtonElement>) => {
-    e.preventDefault();
-    alert("u clicked the button");
-  };
+  // const handleClick = (e: FormEvent<HTMLButtonElement>) => {
+  //   e.preventDefault();
+  //   alert("u clicked the button");
+  // };
 
-  const handleChangePW = (e: ChangeEvent<HTMLInputElement>) => {
-    setInputValue(e.target.value);
-  };
+  // const handleChangePW = (e: ChangeEvent<HTMLInputElement>) => {
+  //   setInputValue(e.target.value);
+  // };
 
-  const handleChangeForm = (e: ChangeEvent<HTMLInputElement>) => {
-    setFormInputValue(e.target.value);
-  };
+  // const handleChangeForm = (e: ChangeEvent<HTMLInputElement>) => {
+  //   setFormInputValue(e.target.value);
+  // };
 
-  console.log(DropDownValue);
+  // console.log(DropDownValue);
+
 
   return (
     <>
-    {/* <button className="btn2 btn-red">hello</button> */}
-      From /Pages/Test
+      <Buttons text="Click me!" />
+      {/* From /Pages/Test
       <br />
       <br />
       <Button text="click me" onclick={handleClick} />
@@ -68,7 +73,7 @@ export const Test = () => {
         </form>
       </div>
 
-      <Dropdown options={DropDownValue}/>
+      <Dropdown options={DropDownValue}/> */}
     </>
   );
 };
