@@ -1,6 +1,7 @@
 import React, { useState, ChangeEvent, FormEvent } from "react";
 import Buttons from "../components/form/buttons/buttons";
 import Inputs from "../components/form/inputs/inputs";
+import Textareas from "../components/form/textareas/textareas";
 
 // import { Button } from "./buttons.interface";
 
@@ -37,6 +38,8 @@ export const Test = () => {
       <form>
         <Inputs type="text" placeholder="Enter Your Name" />
         <Buttons primary secondary text="Click me!" />
+        <br/>
+        <Textareas placeholder="textarea placeholder" />
       </form>
       {/* From /Pages/Test
       <br />
