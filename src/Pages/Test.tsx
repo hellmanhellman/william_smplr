@@ -3,17 +3,12 @@ import Buttons from "../components/form/buttons/buttons";
 import Inputs from "../components/form/inputs/inputs";
 import Textareas from "../components/form/textareas/textareas";
 import Labels from "../components/form/labels/labels";
-import Dropdowns from "../components/form/dropdowns/dropdowns"
-
-// import { Button } from "./buttons.interface";
+import Dropdowns from "../components/form/dropdowns/dropdowns";
 
 import { Button } from "../components/form/buttons/buttons.interface";
 
-// import Button from "../components/form/buttonOld";
-// import Input from "../components/form/inputOld";
-// import Dropdown from "../components/form/dropdownOld";
 
-const initialDropDownValues = ["volvo", "vw", "bmw"]
+const initialDropDownValues = ["volvo", "vw", "bmw"];
 
 export const Test = () => {
   // const [InputValue, setInputValue] = useState<string>("");
@@ -33,27 +28,28 @@ export const Test = () => {
   //   setFormInputValue(e.target.value);
   // };
 
-  // console.log(DropDownValue);
-
   return (
     <>
       <form>
         <Inputs type="text" placeholder="Enter Your Name" />
-        <Inputs type="radio" placeholder="radio" />
+        <Inputs type="radio"/>
+        <Inputs type="color"/>
+        <Inputs type="date"/>
+        <Inputs type="file"/>
+        <Inputs type="checkbox"/>
+        <Inputs type="range"/>
+        <Inputs type="number"/>
+        <br/>
         <Buttons primary secondary text="Click me!" />
-        <br/>
+        <br />
         <Textareas placeholder="textarea placeholder" />
-        <br/>
+        <br />
         <Labels text="test label" />
-        <br/>
-        <Dropdowns options={initialDropDownValues}/> 
+        <br />
+        <Dropdowns options={initialDropDownValues} />
       </form>
       {/* From /Pages/Test
-      <br />
-      <br />
       <Button text="click me" onclick={handleClick} />
-      <br />
-      <br />
       <Input
         placeholder="Enter your password"
         type="password"
@@ -62,9 +58,7 @@ export const Test = () => {
       />
       <h1 className="william">test</h1>
       <p>your password is: {InputValue}</p>
-      <br />
-      <br />
-      <br />
+
       <div id="test_form">
         <form>
           <Input
@@ -73,9 +67,6 @@ export const Test = () => {
             value={FormInputValue}
             handleChange={handleChangeForm}
           />
-          <br />
-          <br />
-
           <Button
             primary
             text="Submit your name"

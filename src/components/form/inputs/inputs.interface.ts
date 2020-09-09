@@ -1,9 +1,9 @@
 export interface Input {
-  typeOfInput: string;
-  placeholder: string;
+  type: string;
+  placeholder?: string;
 }
 
 export interface IInputs {
-  typeOfInput: string;
-  placeholder: string;
+  type: string;
+  placeholder?: string;
 }
