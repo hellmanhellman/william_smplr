@@ -5,6 +5,7 @@ import Textareas from "../components/form/textareas/textareas";
 import Labels from "../components/form/labels/labels";
 import Dropdowns from "../components/form/dropdowns/dropdowns";
 import Links from "../components/form/links/links";
+import Images from "../components/form/images/images"
 
 import { Button } from "../components/form/buttons/buttons.interface";
 
@@ -32,7 +33,6 @@ export const Test = () => {
     <>
 
     {/* img
-    a
     toggle */}
       <form>
         <Inputs type="text" placeholder="Enter Your Name" />
@@ -64,6 +64,7 @@ export const Test = () => {
       <Labels text="Other" htmlFor="other" />
       <br/>
       <br/>
+      <Images src="https://www.w3schools.com/images/lamp.jpg" alt="Lamp"/>
       <br/>
       <Links text="Go to google" href="https://google.se" />
       {/* From /Pages/Test
