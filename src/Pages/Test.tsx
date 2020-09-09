@@ -4,9 +4,9 @@ import Inputs from "../components/form/inputs/inputs";
 import Textareas from "../components/form/textareas/textareas";
 import Labels from "../components/form/labels/labels";
 import Dropdowns from "../components/form/dropdowns/dropdowns";
+import Links from "../components/form/links/links";
 
 import { Button } from "../components/form/buttons/buttons.interface";
-
 
 const initialDropDownValues = ["volvo", "vw", "bmw"];
 
@@ -30,16 +30,20 @@ export const Test = () => {
 
   return (
     <>
+
+    {/* img
+    a
+    toggle */}
       <form>
         <Inputs type="text" placeholder="Enter Your Name" />
-        <Inputs type="radio"/>
-        <Inputs type="color"/>
-        <Inputs type="date"/>
-        <Inputs type="file"/>
-        <Inputs type="checkbox"/>
-        <Inputs type="range"/>
-        <Inputs type="number"/>
-        <br/>
+        <Inputs type="radio" />
+        <Inputs type="color" />
+        <Inputs type="date" />
+        <Inputs type="file" />
+        <Inputs type="checkbox" />
+        <Inputs type="range" />
+        <Inputs type="number" />
+        <br />
         <Buttons primary secondary text="Click me!" />
         <br />
         <Textareas placeholder="textarea placeholder" />
@@ -48,6 +52,20 @@ export const Test = () => {
         <br />
         <Dropdowns options={initialDropDownValues} />
       </form>
+
+      <br />
+      <br />
+      <br />
+      <Inputs type="radio" name="gender" id="male" />
+      <Labels text="Male" htmlFor="male" />
+      <Inputs type="radio" name="gender" id="female" />
+      <Labels text="Female" htmlFor="female" />
+      <Inputs type="radio" name="gender" id="other" />
+      <Labels text="Other" htmlFor="other" />
+      <br/>
+      <br/>
+      <br/>
+      <Links text="Go to google" href="https://google.se" />
       {/* From /Pages/Test
       <Button text="click me" onclick={handleClick} />
       <Input
