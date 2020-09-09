@@ -6,6 +6,7 @@ import Labels from "../components/form/labels/labels";
 import Dropdowns from "../components/form/dropdowns/dropdowns";
 import Links from "../components/form/links/links";
 import Images from "../components/form/images/images"
+import Toggleswitches from "../components/form/toggleswitches/toggleswitches"
 
 import { Button } from "../components/form/buttons/buttons.interface";
 
@@ -28,6 +29,8 @@ export const Test = () => {
   // const handleChangeForm = (e: ChangeEvent<HTMLInputElement>) => {
   //   setFormInputValue(e.target.value);
   // };
+
+  // window.scroll(() => console.log("hello"))
 
   return (
     <>
@@ -67,6 +70,8 @@ export const Test = () => {
       <Images src="https://www.w3schools.com/images/lamp.jpg" alt="Lamp"/>
       <br/>
       <Links text="Go to google" href="https://google.se" />
+      <br/>
+      <Toggleswitches />
       {/* From /Pages/Test
       <Button text="click me" onclick={handleClick} />
       <Input
